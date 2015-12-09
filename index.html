@@ -14,7 +14,7 @@
   <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
   <meta name="author" content="Yashkumar Shiroya">
   <style>
-    header {
+    .header {
       text-align: center;
       background: url(http://i.imgur.com/qrjjwpU.jpg);
 
@@ -25,9 +25,15 @@
       margin: 0px auto;
       padding: 0px;
       font-size: 20px;
+      overflow: hidden;
       height: 250px;
       position: fixed;
-      z-index: 250;
+      z-index: 1000;
+      -webkit-transition: height 0.3s;
+      -moz-transition: height 0.3s;
+      transition: height 0.3s;
+      text-align:center;
+      /*line-height:160px;*/
       top: 0;
       left: 0;
       right: 0;
@@ -104,7 +110,7 @@
 </head>
 <div class="container fadeIn animated">
 <body>
- 
+ <div class="header">
   <header>
     <h1>Yashkumar Shiroya</h1>
     <ul>
@@ -115,7 +121,7 @@
       </div>
     </ul>
   </header>
-
+</div>
   <div class="container slideInUp animated">
   <article> 
         <p>Hey! I am Yashkumar, a Computer Science sophomore at 
