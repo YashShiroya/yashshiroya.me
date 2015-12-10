@@ -13,12 +13,12 @@
   <meta name="description" content="Yashkumar Shiroya(yashshiroya) | Computer Science Student | Purdue University">
   <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
   <meta name="author" content="Yashkumar Shiroya">
+  
   <style>
     .header {
       text-align: center;
       background: url(http://i.imgur.com/qrjjwpU.jpg);
 
-      /*url('https://lh3.googleusercontent.com/m-g-5AQZu6fGj8tUmd4HOq28QJ-06EmRJtn4dvy3VtBxRygomO9W8lpX3QZ5CXlEIRIaw0wY62oBOxRxVjey3NZj7Rlj0be8tzySwd2Ms7OiiRjNPWjkX3vqqudT4zTIXOplBHYHpKTMqDv3FEbr_UjfdNFSllrK0ecRoWu4NASfd1PoMtpbS0ZSzv3B83Fv7wwAVSyRQVSwOZFHYT8HACbSMCvZwX5dg3T3n80DudZEOg-9AcehJ9I64FYMMhuj2dZiSGUol-s3W7ZjsMbUHSp-557igLx6A6nrqWz84UySe9Zb4WS44ztrr78BCohIkXpYhtvEsJMmwDtx_VHZ5GUjhux_fe8vKE5Tmgt72zEZeC5WAhkElMc_eJtR8TA7gnrPt6iSsawJpOwZnEUSNeQftck7hx-9eLaGGxC1qMD78Lxdg9tfRh0WoQqHeT3s-WG3lqyFmAee_LPVQvWVzaLF6xo8ztEKkVD9DLiK605VhJLccJ8VO9UwZh5NESlEJtzu8TVMv2ZlPOrF_4xiFUqE0LBvRUgqaaMLBNybJes=w1687-h955-no');*/
 
       background-size: cover;
       color: black;
@@ -27,42 +27,25 @@
       font-size: 20px;
       overflow: hidden;
       height: 250px;
+      width: 100%;
       position: fixed;
       z-index: 1000;
       -webkit-transition: height 0.3s;
       -moz-transition: height 0.3s;
       transition: height 0.3s;
-      text-align:center;
-      /*line-height:160px;*/
       top: 0;
       left: 0;
-      right: 0;
-      
+      right: 0; 
     }
     div {
     -webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
     animation-duration: 5s;
 }
-    @font-face {
-      font-family: 'myfont';
-      src: url('/home/campus/yshiroya/www/economica/economica.otf') format("opentype");
-    }
     a {
       color: white;
       text-decoration: none;
     }
-    h1 {
-      padding: 70px 0px 50px 0px;
-      margin: 0 auto;
-      font-family: 'Poiret One', Verdana;
-      font-size: 60px;
-      opacity: 0.65;
-    }
-    img {
-      margin: 40px 0px 0px 0px;
-      border: 7px solid white;
-      border-radius: 20px;
-    }
+
     ul {
       font-family: 'Flamenco', cursive;
       text-align: center;
@@ -97,55 +80,57 @@
       background-color: #0B7E64;
       position: relative;
     }
-    @media (max-width: 700px) {
-      li {
-        display: block;
-        padding: 10px;
-      }
-      h1 {
-        font-size: 35px;
-      }
-    }
 
-      .header.shrink {
+.header.shrink {
  height: 100px;
- line-height:80px;
+ /*line-height:80px;*/
 }
-.header h1
-{
- font-size:60px;
+.header h1 {
  /*font-weight:normal;*/
  -webkit-transition: all 0.3s;
  -moz-transition: all 0.3s;
  transition: all 0.3s;
+
+ padding: 70px 0px 50px 0px;
+ margin: 0 auto;
+ font-family: 'Poiret One', Verdana;
+ font-size: 60px;
  opacity: 0.55;
 }
-.header.shrink h1
-{
+.header.shrink h1 {
  font-size:40px;
  -webkit-transition: all 0.3s;
  -moz-transition: all 0.3s;
  transition: all 0.3s;
 }
-
+.content {
+  height:2000px;
+}
   </style>
+
+
+
 </head>
+
+
 <div class="container fadeIn animated">
-<body>
- <div class="header">
-  <header>
-    <h1>Yashkumar Shiroya</h1>
-    <ul>
-      <div class="container slideInUp animated">
-        <li><a href="#">About</a></li>
-        <li><a href="web_items/Resume.pdf" target="Resume">Resume</a></li>
-        <li><a href="#">Projects</a></li>
-      </div>
-    </ul>
-  </header>
+  <body>
+
+
+      <header>
+        <h1>Yashkumar Shiroya</h1>
+          <ul>
+            <div class="container slideInUp animated">
+              <li><a href="#">About</a></li>
+              <li><a href="web_items/Resume.pdf" target="Resume">Resume</a></li>
+              <li><a href="#">Projects</a></li>
+            </div>
+          </ul>
+      </header>
 </div>
-  <div class="container slideInUp animated">
-  <article> 
+
+    <div class="container slideInUp animated">
+      <article> 
         <p>Hey! I am Yashkumar, a Computer Science sophomore at 
           <a style="color: #A0E5F8;"href="http://www.purdue.edu/" target="Purdue University">Purdue University</a>. </p>
           <p>random info</p>
@@ -173,8 +158,24 @@
           <p>random info</p>
           <p>random info</p>
           <p>random info</p>
-  </article>
-</div>
-</body>
+        </article>
+    </div>
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JQuery Script ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  $(window).on("scroll", function() {
+    if($(window).scrollTop() > 100) {
+      $("header").addClass("shrink");
+    }
+    else{
+        $("header").removeClass("shrink");
+    }
+  });
+</script>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JQuery End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */-->
+
+  </body>
  </div>
 </html>
