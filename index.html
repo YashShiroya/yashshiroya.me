@@ -19,6 +19,8 @@
   <meta name="author" content="Yashkumar Shiroya">
 
   <style>
+
+
     header {
 
       /*Changeable 'values'*/
@@ -75,12 +77,13 @@
       bottom: 0;
       right: 0;
       left: 0;
-
+      height: 50px;
+      transition: all 0.4s ease
     }
     li {
       display: inline;
-      margin: 0 auto;
       padding: 20px 70px 20px 70px;
+      vertical-align: center;
     }
     article {
       font-family: 'Source Sans Pro', sans-serif;
@@ -97,31 +100,40 @@
     body {
       margin: 0 auto;
       background-color: #0B7E64;
+      text-align: center;
       position: relative;
     }
 
     header.animate_header {
+      display: inline;
       text-align: center;
       background: url(http://i.imgur.com/qrjjwpU.jpg);
       background-size: cover;
       color: black;
       margin: 0px auto;
       padding: 0px;
-      height: 50px;
+      height: 70px;
       position: fixed;
       transition: all 0.4s ease;
+    }
+
+    ul.animate_ul {
+      height: 70px;
+      font-size: 40px;
+      transition: all 0.4s ease
     }
 /*Experimental space for scroll animation test*/
 
     div.footer {
+      vertical-align: center;
       position:fixed;
-      bottom:0;
-      right:0;
-      text-align: right;
-      width:100%;
-      height: 90px;
+      bottom: 0;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      height: 60px;
       font-size: 30px;
-      padding: 0px 30px 0px 0px;
+      padding: 0px 0px 0px 0px;
     }
 
     .content{
@@ -139,12 +151,30 @@
     
     }
 
+     .card-panel {
+        height: 60px;
+        width: 100px;
+        background:rgba(0,0,0,0.6);
+        text-align: center;
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 0px;
+
+    }
+
+    .up_arrow {
+      position: fixed;
+      margin: 0px 20px 10px 0px;
+      right: 0;
+      bottom: 0;
+    }
   </style>
 </head>
 
 
-<div class="container fadeIn animated">
+
   <body>
+    <div class="container fadeIn animated">
       <header>
         <h1>Yashkumar Shiroya</h1>
           <ul class="z-depth-2">
@@ -161,15 +191,11 @@
       <article> 
         <p>Hey! I am Yashkumar, a Computer Science sophomore at 
           <a style="color: #A0E5F8;"href="http://www.purdue.edu/" target="Purdue University">Purdue University</a>. </p>
-        </article>
-        
+        </article>     
     </div>
-    <div class="footer">
-       <a href="#">
-          <img src="http://i.imgur.com/YQgKoeh.png" HEIGHT="60" WIDTH="60" class="opacity">
-          </img>
-        </a>
-    </div>
+
+    
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Materialize Script ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JQuery Script ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */-->
@@ -181,17 +207,28 @@ $(window).scroll(function() {
     if ($(this).scrollTop() > 1){  
         $('header').addClass("animate_header");
         $('h1').addClass("animate_h1");
+        $('ul').addClass("animate_ul");
     }
     else{
         $('header').removeClass("animate_header");
         $('h1').removeClass("animate_h1");
+        $('ul').removeClass("animate_ul");
     }
 });
 </script>
 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JQuery End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */-->
-<div class="content"></div>
+      <div class="content"></div>
+    </div>
+    <div class="footer">
+      <div class="card-panel">
+        <a href="https://github.com/YashShiroya/" target="_blank">
+        <img style="margin: 15px 0px 0px 0px; opacity:0.7" src="profile_img/PNG/GitHub-Mark-Light-32px.png"> </img>
+      </a>
+      </div>
+
+    </div>
   </body>
- </div>
+
 </html>
