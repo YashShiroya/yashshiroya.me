@@ -19,7 +19,10 @@
   <meta name="author" content="Yashkumar Shiroya">
 
   <style>
+
+
     header {
+
       /*Changeable 'values'*/
       text-align: center;
       background: url(http://i.imgur.com/qrjjwpU.jpg);
@@ -37,33 +40,31 @@
       left: 0;
       right: 0
     }
+
     a {
       color: white;
       text-decoration: none;
     }
+
     h1 {
       padding: 70px 0px 50px 0px;
       margin: 0 auto;
-      height: 200px;
-      /*font-family: 'Poiret One', Verdana;*/
-      text-transform: uppercase;
-      font-family: "Roboto", sans-serif;
-      font-size: 50px;
-      opacity: 0.7;
+      font-family: 'Poiret One', Verdana;
+      font-size: 60px;
+      opacity: 0.65;
       transition: all 0.4s ease;
     }
-    h1.animate_h1 {
 
+    h1.animate_h1 {
+      padding: 20px;
       margin: 0 auto;
-      height: 200px;
-      text-transform: uppercase;
-      font-family: "Roboto", sans-serif;
-      opacity: 1.0;
-      vertical-align: middle;
-      background-color: rgba(223, 223, 224, 1);
+      font-family: 'Poiret One', Verdana;
+      font-size: 0px;
+      opacity: 0.65;
+      top: 0;
       transition: all 0.4s ease;
-      padding: 57px;
     }
+
     ul {
       font-family: 'Flamenco', cursive;
       text-align: center;
@@ -91,7 +92,7 @@
       opacity: 0.75;
       padding: 20px;
       margin:  250px auto 0 auto;
-      width:98%;
+      width:700px;
       max-width: 700px;
       text-align: center;
       position: relative;
@@ -102,6 +103,7 @@
       text-align: center;
       position: relative;
     }
+
     header.animate_header {
       display: inline;
       text-align: center;
@@ -110,17 +112,18 @@
       color: black;
       margin: 0px auto;
       padding: 0px;
-      height: 0px;
+      height: 70px;
       position: fixed;
-      opacity: 1.0;
       transition: all 0.4s ease;
     }
+
     ul.animate_ul {
-      height: 0px;
+      height: 70px;
       font-size: 40px;
       transition: all 0.4s ease
     }
 /*Experimental space for scroll animation test*/
+
     div.footer {
       vertical-align: center;
       position:fixed;
@@ -132,21 +135,23 @@
       font-size: 30px;
       padding: 0px 0px 0px 0px;
     }
+
     .content{
       height: 2000px;
-      margin: 0 auto;
     }
+
     img.opacity {
       opacity: 0.50;
       transition: all 0.5s ease;
-
+      
     }
     img.opacity:hover {
       opacity: 1.0;
       transition: all 0.5s ease;
-
+    
     }
-     #git-card.card-panel {
+
+     .card-panel {
         height: 60px;
         width: 100px;
         background:rgba(0,0,0,0.6);
@@ -154,27 +159,8 @@
         font-size: 20px;
         margin: 0 auto;
         padding: 0px;
-    }
 
-    #under-construction.card-panel {
-       height: 80px;
-        width:100%;
-       background: repeating-linear-gradient(
-           -55deg,
-           #1f2b28,
-           #1f2b28 30px,
-           rgba(223, 223, 224, 1) 30px,
-           rgba(223, 223, 224, 1) 60px
-           );
-       text-align: center;
-       font-size: 20px;
-       background: opacity: 1.0;
-       margin:  0 auto;
-       padding: 0px;
-       text-transform: uppercase;
-       position: absolute;
-       color: rgb(255, 255, 255);
-   }
+    }
 
     .up_arrow {
       position: fixed;
@@ -190,52 +176,43 @@
   <body>
     <div class="container fadeIn animated">
       <header>
-        <h1>This site is under construction</h1>
-          <!-- <ul class="z-depth-2">
+        <h1>Yashkumar Shiroya</h1>
+          <ul class="z-depth-2">
             <div class="container slideInUp animated">
               <li><a href="#">About</a></li>
               <li><a href="web_items/Resume.pdf" target="Resume">Resume</a></li>
               <li><a href="#">Projects</a></li>
             </div>
-          </ul> -->
-          <div id="under-construction" class="card-panel">
-              <div class="empty" style="height: 50px;">
-              </div>
-          </div>
+          </ul>
+    
       </header>
 
-
-
     <div class="container slideInUp animated">
-      <article>
-        <p>Hey! I am Yashkumar, a Computer Science Junior at
+      <article> 
+        <p>Hey! I am Yashkumar, a Computer Science sophomore at 
           <a style="color: #A0E5F8;"href="http://www.purdue.edu/" target="Purdue University">Purdue University</a>. </p>
-
-        </article>
+        </article>     
     </div>
 
-
-
+    
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Materialize Script ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JQuery Script ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+    
 <script>
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 1){
+    if ($(this).scrollTop() > 1){  
         $('header').addClass("animate_header");
         $('h1').addClass("animate_h1");
         $('ul').addClass("animate_ul");
-        $('body').css({"background-color":"rgba(223, 223, 224, 1)"});
     }
     else{
         $('header').removeClass("animate_header");
         $('h1').removeClass("animate_h1");
         $('ul').removeClass("animate_ul");
-        $('body').css({"background-color":"#0B7E64"});
     }
 });
 </script>
@@ -245,7 +222,7 @@ $(window).scroll(function() {
       <div class="content"></div>
     </div>
     <div class="footer">
-      <div id='git-card' class="card-panel">
+      <div class="card-panel">
         <a href="https://github.com/YashShiroya/" target="_blank">
         <img style="margin: 15px 0px 0px 0px; opacity:0.7" src="profile_img/PNG/GitHub-Mark-Light-32px.png"> </img>
       </a>
