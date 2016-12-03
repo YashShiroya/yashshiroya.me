@@ -1,0 +1,123 @@
+header {
+    /*Changeable 'values'*/
+    text-align: center;
+    background: url(http://i.imgur.com/qrjjwpU.jpg);
+    background-size: cover;
+    color: black;
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 20px;
+    height: 250px;
+    position: fixed;
+    transition: all 0.4s ease;
+    /*Absolutely necessary for scroll integrity*/
+    z-index: 250;
+    top: 0;
+    left: 0;
+    right: 0
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+h1.heading {
+    padding: 70px 0px 50px 0px;
+    margin: 0 auto;
+    font-family: 'Poiret One', Verdana;
+    font-size: 60px;
+    opacity: 0.65;
+    transition: all 0.4s ease;
+}
+h1.animate_h1 {
+    padding: 20px;
+    margin: 0 auto;
+    font-family: 'Poiret One', Verdana;
+    font-size: 0px;
+    opacity: 0.65;
+    top: 0;
+    transition: all 0.4s ease;
+}
+ul {
+    font-family: 'Flamenco', cursive;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 30px;
+    background: #02100D;
+    opacity: 0.65;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    transition: all 0.4s ease
+}
+
+div.li_bar {
+    margin: 0 auto;
+    padding: 5px;
+    width: 100%;
+    text-decoration: none;
+}
+
+div.li_bar>li {
+    display: inline;
+    padding: 20px 90px 20px 90px;
+    vertical-align: center;
+}
+
+div.li_bar>li>a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+div.main_holder {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    color: white;
+    opacity: 0.75;
+    padding: 20px;
+    margin-top: 250px;
+    width: 100%;
+    text-align: center;
+    /*position: relative;*/
+}
+body {
+    margin: 0 auto;
+    background-color: #0B7E64;
+    text-align: center;
+    position: relative;
+}
+header.animate_header {
+    display: inline;
+    text-align: center;
+    background: url(http://i.imgur.com/qrjjwpU.jpg);
+    background-size: cover;
+    color: black;
+    margin: 0px auto;
+    padding: 0px;
+    height: 70px;
+    position: fixed;
+    transition: all 0.4s ease;
+}
+ul.animate_ul {
+    height: 70px;
+    font-size: 40px;
+    transition: all 0.4s ease
+}
+
+/*Experimental space for scroll animation test*/
+
+div.footer {
+    vertical-align: center;
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    font-size: 30px;
+    padding: 0px 0px 0px 0px;
+}
+.content {
+    height: 2000px;
+}

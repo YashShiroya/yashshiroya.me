@@ -1,234 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <link href="normalize.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="CSS/animate.css">
-   <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-  <!-- Compiled and minified JavaScript -->
+    <link href="CSS/normalize.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/animate.css">
 
-  <title>Yashkumar Shiroya | yashshiroya | Purdue University</title>
-  <meta name="description" content="Yashkumar Shiroya(yashshiroya) | Computer Science Student | Purdue University">
-  <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-  <meta name="author" content="Yashkumar Shiroya">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
 
-  <style>
+    <title>Yashkumar Shiroya | yashshiroya | Purdue University</title>
+    <meta name="description" content="Yashkumar Shiroya(yashshiroya) | Computer Science Student | Purdue University">
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    <meta name="author" content="Yashkumar Shiroya">
 
+    <style>
+        img.opacity {
+            opacity: 0.50;
+            transition: all 0.5s ease;
+        }
 
-    header {
+        img.opacity:hover {
+            opacity: 1.0;
+            transition: all 0.5s ease;
+        }
 
-      /*Changeable 'values'*/
-      text-align: center;
-      background: url(http://i.imgur.com/qrjjwpU.jpg);
-      background-size: cover;
-      color: black;
-      margin: 0px auto;
-      padding: 0px;
-      font-size: 20px;
-      height: 250px;
-      position: fixed;
-      transition: all 0.4s ease;
-      /*Absolutely necessary for scroll integrity*/
-      z-index: 250;
-      top: 0;
-      left: 0;
-      right: 0
-    }
+        .card-panel {
+            height: 60px;
+            width: 100px;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            font-size: 20px;
+            margin: 0 auto;
+            padding: 0px;
+        }
 
-    a {
-      color: white;
-      text-decoration: none;
-    }
+        .up_arrow {
+            position: fixed;
+            margin: 0px 20px 10px 0px;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
 
-    h1 {
-      padding: 70px 0px 50px 0px;
-      margin: 0 auto;
-      font-family: 'Poiret One', Verdana;
-      font-size: 60px;
-      opacity: 0.65;
-      transition: all 0.4s ease;
-    }
-
-    h1.animate_h1 {
-      padding: 20px;
-      margin: 0 auto;
-      font-family: 'Poiret One', Verdana;
-      font-size: 0px;
-      opacity: 0.65;
-      top: 0;
-      transition: all 0.4s ease;
-    }
-
-    ul {
-      font-family: 'Flamenco', cursive;
-      text-align: center;
-      margin: 0 auto;
-      padding: 5px;
-      font-size: 30px;
-      background: #02100D;
-      opacity: 0.65;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      height: 50px;
-      transition: all 0.4s ease
-    }
-    li {
-      display: inline;
-      padding: 20px 70px 20px 70px;
-      vertical-align: center;
-    }
-    article {
-      font-family: 'Source Sans Pro', sans-serif;
-      font-size: 30px;
-      color: white;
-      opacity: 0.75;
-      padding: 20px;
-      margin:  250px auto 0 auto;
-      width:700px;
-      max-width: 700px;
-      text-align: center;
-      position: relative;
-    }
-    body {
-      margin: 0 auto;
-      background-color: #0B7E64;
-      text-align: center;
-      position: relative;
-    }
-
-    header.animate_header {
-      display: inline;
-      text-align: center;
-      background: url(http://i.imgur.com/qrjjwpU.jpg);
-      background-size: cover;
-      color: black;
-      margin: 0px auto;
-      padding: 0px;
-      height: 70px;
-      position: fixed;
-      transition: all 0.4s ease;
-    }
-
-    ul.animate_ul {
-      height: 70px;
-      font-size: 40px;
-      transition: all 0.4s ease
-    }
-/*Experimental space for scroll animation test*/
-
-    div.footer {
-      vertical-align: center;
-      position:fixed;
-      bottom: 0;
-      margin: 0 auto;
-      width: 100%;
-      text-align: center;
-      height: 60px;
-      font-size: 30px;
-      padding: 0px 0px 0px 0px;
-    }
-
-    .content{
-      height: 2000px;
-    }
-
-    img.opacity {
-      opacity: 0.50;
-      transition: all 0.5s ease;
-      
-    }
-    img.opacity:hover {
-      opacity: 1.0;
-      transition: all 0.5s ease;
-    
-    }
-
-     .card-panel {
-        height: 60px;
-        width: 100px;
-        background:rgba(0,0,0,0.6);
-        text-align: center;
-        font-size: 20px;
-        margin: 0 auto;
-        padding: 0px;
-
-    }
-
-    .up_arrow {
-      position: fixed;
-      margin: 0px 20px 10px 0px;
-      right: 0;
-      bottom: 0;
-    }
-  </style>
 </head>
 
 
 
-  <body>
+<body>
     <div class="container fadeIn animated">
-      <header>
-        <h1>Yashkumar Shiroya</h1>
-          <ul class="z-depth-2">
-            <div class="container slideInUp animated">
-              <li><a href="#">About</a></li>
-              <li><a href="web_items/Resume.pdf" target="Resume">Resume</a></li>
-              <li><a href="#">Projects</a></li>
+        <header>
+            <h1 class="heading">Yashkumar Shiroya</h1>
+            <ul class="z-depth-2">
+                <div style="width:100%" class="container slideInUp animated">
+                    <div class="li_bar">
+                        <li><a href="#">About</a></li>
+                        <li><a href="web_items/Resume.pdf" target="Resume">Resume</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </div>
+                </div>
+            </ul>
+
+        </header>
+
+        <div class="container slideInUp animated">
+            <!-- <article> -->
+            <div class="main_holder">
+                <p style="width: 100%; margin:auto auto; padding-top: 50px; text-align: center;">Hey! I am Yashkumar, a Computer Science Junior at
+                    <a style="color: #A0E5F8;" href="http://www.purdue.edu/" target="Purdue University">Purdue University</a>. </p>
+                <!-- </article> -->
             </div>
-          </ul>
-    
-      </header>
+        </div>
 
-    <div class="container slideInUp animated">
-      <article> 
-        <p>Hey! I am Yashkumar, a Computer Science sophomore at 
-          <a style="color: #A0E5F8;"href="http://www.purdue.edu/" target="Purdue University">Purdue University</a>. </p>
-        </article>     
-    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    
+        <script>
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 1) {
+                    $('header').addClass("animate_header");
+                    $('h1').addClass("animate_h1");
+                    $('ul').addClass("animate_ul");
+                } else {
+                    $('header').removeClass("animate_header");
+                    $('h1').removeClass("animate_h1");
+                    $('ul').removeClass("animate_ul");
+                }
+            });
+        </script>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Materialize Script ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JQuery Script ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */-->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
-<script>
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 1){  
-        $('header').addClass("animate_header");
-        $('h1').addClass("animate_h1");
-        $('ul').addClass("animate_ul");
-    }
-    else{
-        $('header').removeClass("animate_header");
-        $('h1').removeClass("animate_h1");
-        $('ul').removeClass("animate_ul");
-    }
-});
-</script>
-
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JQuery End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */-->
-      <div class="content"></div>
+        <div class="content"></div>
     </div>
     <div class="footer">
-      <div class="card-panel">
-        <a href="https://github.com/YashShiroya/" target="_blank">
-        <img style="margin: 15px 0px 0px 0px; opacity:0.7" src="profile_img/PNG/GitHub-Mark-Light-32px.png"> </img>
-      </a>
-      </div>
+        <div class="card-panel">
+            <a href="https://github.com/YashShiroya/" target="_blank">
+                <img style="margin: 15px 0px 0px 0px; opacity:0.7" src="profile_img/PNG/GitHub-Mark-Light-32px.png"> </img>
+            </a>
+        </div>
 
     </div>
-  </body>
+</body>
 
 </html>
