@@ -109,7 +109,7 @@ header.animate_header {
 ul.animate_ul {
     height: 60px;
     font-size: 40px;
-    transition: all 0.4s ease
+    transition: all 0.4s ease;
 }
 
 /*Experimental space for scroll animation test*/
