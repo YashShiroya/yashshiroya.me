@@ -62,7 +62,7 @@ div.li_bar>li {
     display: inline;
     padding: 20px 90px 20px 90px;
     vertical-align: middle;
-    font-size: 120%;
+    font-size: 130%;
 }
 div.li_bar>li>a {
     text-decoration: none;
@@ -70,7 +70,6 @@ div.li_bar>li>a {
     vertical-align: middle;
 }
 div.main_holder {
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 30px;
     color: white;
     opacity: 0.75;
