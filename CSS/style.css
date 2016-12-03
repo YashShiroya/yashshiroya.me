@@ -37,7 +37,7 @@ h1.animate_h1 {
     top: 0;
     transition: all 0.4s ease;
 }
-ul {
+div.ul_bar>ul {
     font-family: 'Flamenco', cursive;
     text-align: center;
     margin: 0 auto;
@@ -49,26 +49,25 @@ ul {
     bottom: 0;
     right: 0;
     left: 0;
-    height: 50px;
+    height: 67px;
     transition: all 0.4s ease
 }
-
 div.li_bar {
-    margin: 0 auto;
+    vertical-align: middle;
     padding: 5px;
     width: 100%;
     text-decoration: none;
 }
-
 div.li_bar>li {
     display: inline;
     padding: 20px 90px 20px 90px;
-    vertical-align: center;
+    vertical-align: middle;
+    font-size: 120%;
 }
-
 div.li_bar>li>a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
+    vertical-align: middle;
 }
 div.main_holder {
     font-family: 'Source Sans Pro', sans-serif;
@@ -81,11 +80,19 @@ div.main_holder {
     text-align: center;
     /*position: relative;*/
 }
+div.main_holder>p {
+    width: 100%;
+    margin: auto auto;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 140%;
+}
 body {
     margin: 0 auto;
     background-color: #0B7E64;
     text-align: center;
     position: relative;
+    font-size: 16px;
 }
 header.animate_header {
     display: inline;
@@ -95,12 +102,12 @@ header.animate_header {
     color: black;
     margin: 0px auto;
     padding: 0px;
-    height: 70px;
+    height: 60px;
     position: fixed;
     transition: all 0.4s ease;
 }
 ul.animate_ul {
-    height: 70px;
+    height: 60px;
     font-size: 40px;
     transition: all 0.4s ease
 }
