@@ -97,6 +97,7 @@ div.main_holder>p {
 }
 body {
     margin: 0 auto;
+    padding: 0px;
     background-color: #0B7E64;
     text-align: center;
     position: relative;
@@ -130,6 +131,13 @@ ul.animate_ul {
   padding: 0px;
 }
 
+#footer_list-projects li
+{
+  /*display: inline;*/
+  list-style-type: none;
+  padding: 0px;
+}
+
 #footer_list {
 
 }
@@ -144,6 +152,15 @@ div.footer {
     width: 100%;
     text-align: center;
     height: 76px;
+    padding: 0px 0px 0px 0px;
+}
+
+div.footer-projects {
+    position: fixed;
+    top: 80%;
+    right: 9px;
+    /*bottom:0;*/
+    margin: 0 auto;
     padding: 0px 0px 0px 0px;
 }
 .content {
