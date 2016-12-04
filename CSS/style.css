@@ -111,6 +111,18 @@ ul.animate_ul {
     transition: all 0.4s ease;
 }
 
+#footer_list li
+{
+  /*display: inline;*/
+  display:inline-block;
+  list-style-type: none;
+  padding: 0px;
+}
+
+#footer_list {
+    
+}
+
 /*Experimental space for scroll animation test*/
 
 div.footer {
@@ -120,8 +132,7 @@ div.footer {
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    height: 60px;
-    font-size: 30px;
+    height: 76px;
     padding: 0px 0px 0px 0px;
 }
 .content {
