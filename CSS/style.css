@@ -78,6 +78,7 @@ div.li_bar>li>a {
     vertical-align: middle;
 }
 div.main_holder {
+    font-family: 'PT Sans', sans-serif;
     font-size: 30px;
     color: white;
     opacity: 0.75;
