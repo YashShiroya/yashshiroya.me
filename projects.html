@@ -36,6 +36,22 @@
             transition: all 0.3s ease;
         }
 
+        .card-action>a>img {
+            width:110px; /* you can use % */
+            opacity:0.7;
+            height: auto;
+            -webkit-filter: invert(1);
+            filter: invert(1);
+        }
+
+        .card-action>a>img:hover {
+            width:110px; /* you can use % */
+            opacity:0.7;
+            height: auto;
+            -webkit-filter: invert(0);
+            filter: invert(0);
+        }
+
         .li_bar>li:hover {
             opacity: 1.0;
             transition: all 0.3s ease;
@@ -63,12 +79,30 @@
 
 
 <body>
-    <div class="container fadeIn animated">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 1) {
+                $('header').addClass("animate_header");
+                $('h1').addClass("animate_h1");
+                $('ul_bar>ul').addClass("animate_ul");
+            } else {
+                $('header').removeClass("animate_header");
+                $('h1').removeClass("animate_h1");
+                $('ul_bar>ul').removeClass("animate_ul");
+            }
+        });
+    </script>
+
+    <div class="animation_here">
         <header>
             <h1 class="heading">Yashkumar Shiroya</h1>
             <div class="ul_bar">
                 <ul style="width:100%;" class="z-depth-2">
-                    <div style="width:100%; height: 100%;" class="container fadeInUp animated">
+                    <div style="width:100%; height: 100%;" class="animation_here">
                         <div class="li_bar">
                             <li style="padding: 20px 50px 20px 0px;"><a href="index.html">About</a></li>
                             <li style="padding: 20px 50px 20x 50px;"><a href="web_items/Resume.pdf" target="Resume">Resume</a></li>
@@ -76,38 +110,40 @@
                         </div>
                     </div>
                 </ul>
-            </div>
         </header>
 
-        <div class="container slideInUp animated">
-            <!-- <article> -->
-            <div class="main_holder">
-                <p>Hey! I am Yashkumar, a Junior in Computer Science at
-                    <a style="color: #A0E5F8;" href="http://www.purdue.edu/" target="Purdue University">Purdue University</a>. </p>
-                <!-- </article> -->
+        <!--Sorry-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="content" style="max-width: 1000px; margin: 0 auto;">
+            <div class="container fadeInUp animated">
+            <div class="row">
+                <div class="card teal darken-3">
+                    <div class="card-content white-text">
+                        <span class="card-title"><p style="font-size:140%;">JDBC Curriculum Client</p></span>
+                        <p style="font-size:130%"><br>
+Curriculum manager tracks students, teachers, courses, dependencies deployed in a SQL backend controlled by Java based client interconnected by JDBC (Java Database Connectivity Library) for direct SQL database manipulation. </p>
+                    </div>
+                    <div class="card-action">
+                        <!-- /home/exntr1c/Github/yashshiroya.me/profile_img/PNG/GithubLogos/GitHub_Logo.png -->
+                        <a href="https://github.com/YashShiroya/JDBC-Curriculum-Client" target="_blank">
+                            <img style="margin: 0 auto; padding: 0px; vertical-align: middle;" src="profile_img/PNG/GithubLogos/GitHub_Logo.png"> </img>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-        <script>
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 1) {
-                    $('header').addClass("animate_header");
-                    $('h1').addClass("animate_h1");
-                    $('ul_bar>ul').addClass("animate_ul");
-                } else {
-                    $('header').removeClass("animate_header");
-                    $('h1').removeClass("animate_h1");
-                    $('ul_bar>ul').removeClass("animate_ul");
-                }
-            });
-        </script>
+        </div>
     </div>
     <div class="footer">
         <ul id="footer_list">
-            <div class="container slideInUp animated">
+            <div class="animation_here">
                 <li>
                     <div class="card-panel">
                         <a href="https://github.com/YashShiroya/" target="_blank">
