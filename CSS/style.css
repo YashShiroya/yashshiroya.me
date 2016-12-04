@@ -52,10 +52,18 @@ div.ul_bar>ul {
     height: 67px;
     transition: all 0.4s ease
 }
+
+div.ul_bar {
+    background: #02100D;
+    line-height:60px;
+}
+
 div.li_bar {
     vertical-align: middle;
     padding: 5px;
     width: 100%;
+    line-height: 40px;
+    height: 40px;
     text-decoration: none;
 }
 div.li_bar>li {
@@ -102,11 +110,13 @@ header.animate_header {
     margin: 0px auto;
     padding: 0px;
     height: 60px;
+    line-height:60px;
     position: fixed;
     transition: all 0.4s ease;
 }
 ul.animate_ul {
     height: 60px;
+    line-height:60px;
     font-size: 40px;
     transition: all 0.4s ease;
 }
@@ -120,7 +130,7 @@ ul.animate_ul {
 }
 
 #footer_list {
-    
+
 }
 
 /*Experimental space for scroll animation test*/
